@@ -1,0 +1,24 @@
+{
+  "name": "burger-app",
+  "version": "1.0.0",
+  "description": "A restaurant app that lets users store their favorite burgers in a database.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marktmcgraw/burger-app.git"
+  },
+  "author": "Mark M",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marktmcgraw/burger-app/issues"
+  },
+  "homepage": "https://github.com/marktmcgraw/burger-app#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mysql": "^2.17.1"
+  }
+}

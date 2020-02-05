@@ -1,7 +1,7 @@
 const express = require("express");
-const mysql = require("mysql");
+// const mysql = require("mysql");
 
-var PORT = process.env.PORT || 8889;
+var PORT = process.env.PORT || 3000;
 
 var app = express();
 
@@ -13,13 +13,15 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Set Handlebars.
-var exphbs = require("express-handlebars");
+// var exphbs = require("express-handlebars");
 
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
+const db = require("./models");
+
+// app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+// app.set("view engine", "handlebars");
 
 // Import routes and give the server access to them.
-var routes = require("./controllers/catsController.js");
+const routes = require("./routes/api-routes");
 
 app.use(routes);
 

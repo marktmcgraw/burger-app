@@ -1,23 +1,21 @@
-const orm = require("orm");
+// Base code used from Section 14, Activity 12 in class
 
-let burger = {
-  all: function(cb) {
-    orm.all("burgers", function(res) {
-      cb(res);
-    });
-  },
-  // The variables cols and vals are arrays.
-  create: function(cols, vals, cb) {
-    orm.create("burgers", cols, vals, function(res) {
-      cb(res);
-    });
-  },
-  update: function(objColVals, condition, cb) {
-    orm.update("burgers", objColVals, condition, function(res) {
-      cb(res);
-    });
-  }
+module.exports = function(sequelize, DataTypes) {
+  const Burger = sequelize.define("Burger", {
+    burgerName: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
+    },
+    devoured: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
+      validate: {
+        len: [1]
+      }
+    },
+  });
+  return Burger;
 };
-
-// Export the database functions 
-module.exports = burger;

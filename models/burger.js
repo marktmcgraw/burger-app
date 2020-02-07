@@ -1,18 +1,26 @@
-// Base code used from Section 14, Activity 12 in class
+// Base code used from ToDo App Example from Brian
+
+const Sequelize = require("sequelize");
 
 module.exports = function(sequelize, DataTypes) {
-  const Burger = sequelize.define("Burger", {
+
+  class Burger extends Sequelize.Model {}
+
+  Burger.init({
     burger_Name: {
       type: DataTypes.STRING,
       allowNull: false,
       timestamps: false,
     },
     devoured: {
-      type: DataTypes.BOOLEAN,
-      defaultValue: false,
-      timestamps: false,
-    },
-    
-  });
+            type: DataTypes.BOOLEAN,
+            defaultValue: false,
+            timestamps: false,
+          }
+
+
+  }, {sequelize, modelName: 'Burger' });
+
   return Burger;
-};
+
+}

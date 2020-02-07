@@ -1,9 +1,11 @@
-const express = require("express");
 // const mysql = require("mysql");
 
-var PORT = process.env.PORT || 3000;
+const db = require("./models");
+const express = require("express");
 
-var app = express();
+const PORT = process.env.PORT || 3000;
+
+const app = express();
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
@@ -15,15 +17,17 @@ app.use(express.json());
 // Set Handlebars.
 // var exphbs = require("express-handlebars");
 
-const db = require("./models");
+
 
 // app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 // app.set("view engine", "handlebars");
 
 // Import routes and give the server access to them.
-const routes = require("./routes/api-routes");
+let routes = require("./routes/api-routes");
 
-app.use(routes);
+app.use('/', routes);
+
+module.exports = app;
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function() {

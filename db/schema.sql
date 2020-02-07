@@ -5,8 +5,10 @@ USE burgers_DB;
 
 CREATE TABLE burgers (
 id INTEGER NOT NULL AUTO_INCREMENT,
-burger_name VARCHAR(30) NOT NULL,
+burger_Name VARCHAR(30) NOT NULL,
 devoured BOOLEAN DEFAULT false,
+createdAt DATETIME NOT NULL,
+updatedAt DATETIME NOT NULL,
 PRIMARY KEY (id)
 
 

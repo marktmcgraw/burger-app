@@ -1,9 +1,9 @@
-use burgers_DB;
+-- use burgers_DB;
 
-INSERT INTO burgers 
+-- INSERT INTO burgers 
 
-(burger_name)
-VALUES
-("bacon burger"),
-("double cheeseburger"),
-("bleu cheese burger")
+-- (burger_name)
+-- VALUES
+-- ("bacon burger"),
+-- ("double cheeseburger"),
+-- ("bleu cheese burger")

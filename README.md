@@ -19,7 +19,9 @@ This app is deployed using the Heroku platform.
 
 ### Live Site Here:
 
-![Link](Eat 'Da Burger)
+![Eat Da Burger App](Link)
+
+![Home Page](Buger-App-Home.png)
 
 ## Challenges
 
@@ -27,4 +29,4 @@ Main challenges with building Eat 'Da Burger: deployment on Heroku, and recalibr
 
 ## Acknowledgements
 
-I referenced code examples from Section 14 of our curriculum, as well as documentation from mySQL, Heroku. Debugging guidance for my routes.js file was provided by Stack Overflow. Deployment troubleshooting provided by my class instructor, teaching assistants, and other students in my cohort.
+I referenced code examples from Section 14 of our curriculum, as well as documentation from mySQL, Heroku. Debugging guidance for my routes.js file was provided by Stack Overflow. Deployment troubleshooting provided by my class instructor, teaching assistants, and other students in my cohort. Burger graphic provided by kindpng.com.

@@ -2,9 +2,20 @@ h1 {
     font-family: 'Anton', sans-serif;
     text-align: center;
     padding-top: 20px;
+    font-size: 60px;
 }
 
 body {
 
     background-color: #ffdb58;
+}
+
+.burger-graphic {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 600px;
+    padding: 20px;
 }

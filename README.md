@@ -21,7 +21,7 @@ This app is deployed using the Heroku platform.
 
 ![Eat Da Burger App](Link)
 
-![Home Page](Buger-App-Home.png)
+![Home Page](public/assets/Buger-App-Home.png)
 
 ## Challenges
 
